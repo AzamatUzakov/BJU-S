@@ -1,0 +1,63 @@
+
+.content {
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    max-height: 100%; /* or any initial height that fits the content */
+    overflow: hidden;
+    opacity: 1;
+}
+
+.hidden {
+    max-height: 0;
+    opacity: 0;
+}
+
+#toggleButtonDish img {
+    transition: transform 0.5s ease;
+}
+
+.rotated {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease-out;
+}
+
+
+#content {
+    max-height: 100%; 
+    transition: max-height 0.5s ease-out;
+}
+.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease-out;
+}
+
+.hidden {
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+
+
+
+.custom-select_ {
+    padding: 5px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #648179;
+    color: #648179;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="2" height="2" viewBox="0 0 20 20"><polygon fill="%23648179" points="0,0 20,0 10,20"/></svg>') no-repeat right 10px center;
+    background-size: 15px;
+    background-color: #fff; 
+}
+
+@media screen and (max-width: 768px) {
+    .custom-select_ {
+        font-size: 14px;
+    }
+}
